@@ -1,0 +1,26 @@
+.app-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0;
+  margin-right: 280px;
+}
+
+.conteudo-principal {
+  flex: 1;
+  height: 100vh; /* Segura o layout na altura máxima da tela */
+  display: flex;
+  flex-direction: column;
+  margin-right: 280px;
+  width: calc(100% - 280px);
+  overflow: hidden; /* Impede que a página inteira role, passando o controle para dentro do card do Rio */
+}
+
+.secoes-cidades {
+  width: 100%;
+  height: 75vh; /* Combina com o tamanho do componente */
+  padding: 0; /* Tiramos o padding para o banner do Rio colar perfeitamente nas bordas da tela e da Sidebar */
+}

@@ -1,0 +1,84 @@
+.sidebar-lateral {
+  width: 280px;
+  height: 100vh;
+  position: fixed; 
+  top: 0;
+  right: 0; /* Cola no lado direito. Se quiser no esquerdo, mude para left: 0; */
+  background-image: url('/midia/ferias.jpg');  /* Colocando a imagem de fundo diretamente via CSS */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  z-index: 1000;
+}
+
+.sidebar-lateral::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 22, 39, 0.4);
+  z-index: 1;
+}
+
+.sidebar-logo, .sidebar-lateral nav {
+  position: relative;
+  z-index: 2;
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+.sidebar-logo h3 {
+  font-size: 1.8rem;
+  color: #011a17;
+  font-weight: bold; 
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img-emoji {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover; 
+  mix-blend-mode: multiply;
+  opacity: 0.95;
+  filter: contrast(1.1);
+}
+
+.sidebar-lateral nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px; 
+  text-align: center;
+}
+
+.sidebar-lateral nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: block;
+}
+
+.sidebar-lateral nav ul li a:hover {
+  transform: scale(1.05);
+  color: #011a17;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6);
+}
