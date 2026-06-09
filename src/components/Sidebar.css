@@ -22,12 +22,12 @@
   width: 100%;
   height: 100%;
   background-color: rgba(1, 22, 39, 0.4);
-  z-index: 1;
+  z-index: 1; /* fica atrás do conteúdo */
 }
 
 .sidebar-logo, .sidebar-lateral nav {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* fica acima do overlay */
 }
 
 .sidebar-logo {
@@ -37,7 +37,6 @@
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
 
 .sidebar-logo h3 {
   font-size: 1.8rem;
@@ -73,8 +72,9 @@
   font-size: 1.2rem;
   font-weight: bold;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
   display: block;
+  position: relative; /* garante prioridade do hover */
 }
 
 .sidebar-lateral nav ul li a:hover {

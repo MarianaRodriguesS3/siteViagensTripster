@@ -1,25 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import RioDeJaneiro from './components/RioDeJaneiro';
+import RioDeJaneiro from './components/Rio';
+import Fortaleza from './components/Fortaleza';
+
 import './App.css';
 
 export default function App() {
+  const [cidadeAtiva, setCidadeAtiva] = useState('rio');
+
   return (
     <div className="app-wrapper">
-      
+
+      {/* Sidebar controla qual cidade aparece */}
+      <Sidebar setCidadeAtiva={setCidadeAtiva} />
+
       {/* Área Principal de Conteúdo */}
       <main className="main-content">
         <Header />
-        
+
         <div className="content-container">
-          {/* O App.jsx apenas chama os blocos de cada cidade aqui */}
-          <RioDeJaneiro />
+          {cidadeAtiva === 'rio' && <RioDeJaneiro />}
+          {cidadeAtiva === 'fortaleza' && <Fortaleza />}
         </div>
       </main>
-
-      {/* Menu Lateral que faz as âncoras e direcionamentos */}
-      <Sidebar />
 
     </div>
   );
