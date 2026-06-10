@@ -1,5 +1,5 @@
 import React from 'react';
-import './Rio.css';
+import './Cidades.css';
 
 export default function RioDeJaneiro() {
     return (

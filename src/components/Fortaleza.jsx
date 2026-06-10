@@ -1,5 +1,5 @@
 import React from 'react';
-import './Fortaleza.css'; // Você pode criar um CSS separado ou reutilizar o do Rio
+import './Cidades.css';
 
 export default function Fortaleza() {
     return (
