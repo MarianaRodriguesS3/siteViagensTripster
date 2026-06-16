@@ -69,3 +69,46 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .header-top {
+    height: auto;
+    padding: 20px;
+  }
+
+  .header-conteudo {
+    text-align: center;
+    gap: 6px;
+  }
+
+  .header-top h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .header-top h2 {
+    font-size: 0.95rem;
+  }
+
+  .header-top::after {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-top {
+    padding: 15px;
+  }
+
+  .header-top h1 {
+    font-size: 1.3rem;
+  }
+
+  .header-top h2 {
+    font-size: 0.85rem;
+  }
+
+  .header-top::after {
+    width: 95%;
+  }
+}

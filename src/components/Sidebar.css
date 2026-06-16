@@ -82,3 +82,46 @@
   color: #011a17;
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6);
 }
+
+@media (max-width: 768px) {
+  .sidebar-lateral {
+    width: 200px;
+    padding: 25px 15px;
+  }
+
+  .sidebar-logo h3 {
+    font-size: 1.4rem;
+  }
+
+  .logo-img-emoji {
+    width: 35px;
+    height: 35px;
+  }
+
+  .sidebar-lateral nav ul {
+    gap: 25px;
+  }
+
+  .sidebar-lateral nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-lateral {
+    width: 170px;
+    padding: 20px 10px;
+  }
+
+  .sidebar-logo h3 {
+    font-size: 1.2rem;
+  }
+
+  .sidebar-lateral nav ul {
+    gap: 18px;
+  }
+
+  .sidebar-lateral nav ul li a {
+    font-size: 0.9rem;
+  }
+}

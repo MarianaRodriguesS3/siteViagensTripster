@@ -13,7 +13,7 @@ export default function Sidebar({ setCidadeAtiva }) {
         <h3>
           Tripster
           <img
-            src="/midia/logo-tripster.png"
+            src={`${import.meta.env.BASE_URL}midia/logo-tripster.png`}
             alt="Avião dando a volta no planeta"
             className="logo-img-emoji"
           />
