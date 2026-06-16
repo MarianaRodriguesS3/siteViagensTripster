@@ -12,23 +12,27 @@ import './App.css';
 
 export default function App() {
   const [cidadeAtiva, setCidadeAtiva] = useState('rio');
+  const [animKey, setAnimKey] = useState(0);
+
+  const trocarCidade = (cidade) => {
+    setCidadeAtiva(cidade);
+    setAnimKey(prev => prev + 1);
+  };
 
   return (
     <div className="app-wrapper">
 
-      {/* Sidebar controla qual cidade aparece */}
-      <Sidebar setCidadeAtiva={setCidadeAtiva} />
+      <Sidebar setCidadeAtiva={trocarCidade} />
 
-      {/* Área Principal de Conteúdo */}
       <main className="main-content">
-        <Header />
+        <Header key={animKey} />
 
         <div className="content-container">
-          {cidadeAtiva === 'rio' && <RioDeJaneiro />}
-          {cidadeAtiva === 'fortaleza' && <Fortaleza />}
-          {cidadeAtiva === 'florianopolis' && <Florianopolis />}
-          {cidadeAtiva === 'aires' && <BuenosAires />}
-          {cidadeAtiva === 'bariloche' && <Bariloche />}
+          {cidadeAtiva === 'rio' && <RioDeJaneiro key={animKey} />}
+          {cidadeAtiva === 'fortaleza' && <Fortaleza key={animKey} />}
+          {cidadeAtiva === 'florianopolis' && <Florianopolis key={animKey} />}
+          {cidadeAtiva === 'aires' && <BuenosAires key={animKey} />}
+          {cidadeAtiva === 'bariloche' && <Bariloche key={animKey} />}
         </div>
       </main>
 

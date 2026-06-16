@@ -23,19 +23,39 @@ export default function BuenosAires() {
 
                     <div className="city-text">
                         <p>
-                            Buenos Aires é a capital da Argentina e um dos destinos mais visitados da América do Sul.
-                            A cidade combina arquitetura europeia, cultura vibrante e uma forte tradição gastronômica,
-                            sendo famosa pelo tango e pelos cafés históricos.
+                            Buenos Aires é uma cidade vibrante e cheia de atrações para todos os gostos e bolsos, 
+                            com opções que vão desde cultura, história e gastronomia até vida noturna e passeios 
+                            ao ar livre. Entre os destaques está Puerto Madero, uma das áreas mais modernas da cidade, 
+                            com restaurantes, bares e caminhadas à beira do rio, além de pontos turísticos como a 
+                            Puente de la Mujer e antigos navios-museus, que mostram a transformação urbana da região.
+                        </p>
+                        <p>
+                            No centro histórico, a Plaza de Mayo reúne alguns dos símbolos mais importantes da Argentina, 
+                            como a Casa Rosada, a Catedral Metropolitana e o Banco Nación. A região também abriga cafés 
+                            tradicionais como o histórico Café Tortoni, além do famoso Obelisco, localizado no cruzamento 
+                            da Avenida Corrientes com a 9 de Julio, um dos pontos mais fotografados da cidade e cercado por teatros, 
+                            bares e atrações culturais.
                         </p>
 
                         <p>
-                            Entre os principais pontos turísticos estão a Casa Rosada, o bairro La Boca, a Calle Caminito
-                            e o elegante bairro de Palermo, conhecido por seus parques, bares e vida noturna.
+                            A cidade também é referência cultural, com atrações como o Teatro Colón, um dos mais importantes 
+                            do mundo pela sua acústica e arquitetura, e a livraria El Ateneo Grand Splendid, instalada em um antigo teatro. 
+                            Museus como o MALBA e o Museu de Arte Latino-Americana complementam a experiência cultural, 
+                            reunindo obras de grandes artistas como Tarsila do Amaral, Frida Kahlo e outros nomes latino-americanos.
                         </p>
-
                         <p>
-                            A cidade também oferece museus, centros culturais e uma vida urbana intensa, sendo ideal para
-                            quem busca cultura, história e experiências gastronômicas únicas.
+                            Bairros como San Telmo e La Boca mostram o lado mais tradicional e artístico da cidade. 
+                            San Telmo é famoso por sua feira de antiguidades, ruas históricas e o Mercado de San Telmo, 
+                            enquanto La Boca se destaca pelo Caminito, suas casas coloridas e o estádio La Bombonera. 
+                            Já áreas verdes como os Bosques de Palermo, com o Rosedal, Jardim Botânico e Jardim Japonês, 
+                            oferecem tranquilidade, natureza e paisagens perfeitas para caminhadas e passeios.
+                        </p>
+                        <p>
+                            Outros destaques incluem o Centro Cultural Kirchner, o moderno centro cultural da cidade, 
+                            o Parque de la Memoria, dedicado às vítimas da ditadura, e bairros como Villa Crespo e Caballito, 
+                            conhecidos por compras e experiências locais. Buenos Aires também é referência mundial no tango, 
+                            com diversos shows e casas tradicionais espalhadas pela cidade, 
+                            tornando a experiência ainda mais completa e marcante.
                         </p>
                     </div>
                 </div>
