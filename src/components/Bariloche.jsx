@@ -7,7 +7,7 @@ export default function Bariloche() {
 
             {/* 🖼️ Imagem fixa que fica por baixo de tudo */}
             <div className="city-image-fixed">
-                <img src="/midia/bariloche.jpg" alt="Bariloche" />
+                <img src={`${import.meta.env.BASE_URL}midia/bariloche.jpg`} alt="Bariloche" />
             </div>
 
             {/* ✍️ Bloco de conteúdo que flutua e rola por cima */}

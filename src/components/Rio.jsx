@@ -7,7 +7,7 @@ export default function RioDeJaneiro() {
 
             {/* 🖼️ Imagem fixa que fica por baixo de tudo (vazando até por trás do Header) */}
             <div className="city-image-fixed">
-                <img src="/midia/rio.jpg" alt="Rio de Janeiro" />
+                <img src={`${import.meta.env.BASE_URL}midia/rio.jpg`} alt="Rio de Janeiro" />
             </div>
 
             {/* ✍️ Bloco de conteúdo que flutua e rola por cima */}

@@ -7,7 +7,7 @@ export default function Fortaleza() {
 
             {/* 🖼️ Imagem fixa que fica por baixo de tudo */}
             <div className="city-image-fixed">
-                <img src="/midia/fortaleza.jpg" alt="Fortaleza" />
+                <img src={`${import.meta.env.BASE_URL}midia/fortaleza.jpg`} alt="Fortaleza" />
             </div>
 
             {/* ✍️ Bloco de conteúdo que flutua e rola por cima */}

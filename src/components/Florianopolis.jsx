@@ -7,7 +7,7 @@ export default function Florianopolis() {
 
             {/* 🖼️ Imagem fixa que fica por baixo de tudo */}
             <div className="city-image-fixed">
-                <img src="/midia/florianopolis.jpg" alt="Florianópolis" />
+                <img src={`${import.meta.env.BASE_URL}midia/florianopolis.jpg`} alt="Florianópolis" />
             </div>
 
             {/* ✍️ Bloco de conteúdo que flutua e rola por cima */}

@@ -7,7 +7,7 @@ export default function BuenosAires() {
 
             {/* 🖼️ Imagem fixa que fica por baixo de tudo */}
             <div className="city-image-fixed">
-                <img src="/midia/buenosAires.jpg" alt="Buenos Aires" />
+                <img src={`${import.meta.env.BASE_URL}midia/buenosAires.jpg`} alt="Buenos Aires" />
             </div>
 
             {/* ✍️ Bloco de conteúdo que flutua e rola por cima */}
